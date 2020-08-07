@@ -6,7 +6,7 @@
 /*   By: jliew <jliew@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/04 17:30:32 by jliew             #+#    #+#             */
-/*   Updated: 2020/07/06 18:05:50 by jliew            ###   ########.fr       */
+/*   Updated: 2020/08/07 23:48:54 by jliew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ int					ft_isprint(int c);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
 int					ft_atoi(const char *str);
+int					ft_putchar(int c);
 size_t				ft_strlen(const char *str);
 size_t				ft_strlcpy(char *dst, const char *src, size_t n);
 size_t				ft_strlcat(char *dst, const char *src, size_t n);
