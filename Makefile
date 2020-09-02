@@ -6,7 +6,7 @@
 #    By: jliew <jliew@student.42tokyo.jp>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/07/04 22:41:31 by jliew             #+#    #+#              #
-#    Updated: 2020/09/02 11:44:51 by jliew            ###   ########.fr        #
+#    Updated: 2020/09/02 12:30:50 by jliew            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,7 +53,9 @@ ft_memcmp.c\
 ft_putchar_fd.c\
 ft_putstr_fd.c\
 ft_putendl_fd.c\
-ft_putnbr_fd.c
+ft_putnbr_fd.c\
+ft_itoa_base.c\
+ft_count_digit.c
 
 BONUS	= \
 ft_lstnew.c\

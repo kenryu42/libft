@@ -6,7 +6,7 @@
 /*   By: jliew <jliew@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/04 17:30:32 by jliew             #+#    #+#             */
-/*   Updated: 2020/09/02 11:44:04 by jliew            ###   ########.fr       */
+/*   Updated: 2020/09/02 12:31:24 by jliew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ int					ft_max(int a, int b);
 int					ft_min(int a, int b);
 int					ft_atoi(const char *str);
 int					ft_putchar(int c);
+size_t				ft_count_digit(long long n, int base);
 size_t				ft_strlen(const char *str);
 size_t				ft_strlcpy(char *dst, const char *src, size_t n);
 size_t				ft_strlcat(char *dst, const char *src, size_t n);
@@ -61,7 +62,8 @@ void				ft_lstadd_front(t_list **lst, t_list *new);
 int					ft_lstsize(t_list *lst);
 t_list				*ft_lstlast(t_list *lst);
 void				ft_lstadd_back(t_list **lst, t_list *new);
-char				*ft_itoa(int n);
+char				*ft_itoa(long long n);
+char				*ft_itoa_base(long long n, int base);
 char				**ft_split(const char *s, char c);
 char				*ft_strjoin(const char *s1, const char *s2);
 char				*ft_strtrim(const char *s1, const char *set);

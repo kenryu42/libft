@@ -1,51 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_itoa_base.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jliew <jliew@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/08 02:38:20 by jliew             #+#    #+#             */
-/*   Updated: 2020/09/02 12:05:07 by jliew            ###   ########.fr       */
+/*   Created: 2020/09/02 12:00:36 by jliew             #+#    #+#             */
+/*   Updated: 2020/09/02 12:38:02 by jliew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_nlen(long long n)
+char	*ft_itoa_base(long long n, int base)
 {
-	int len;
+	size_t		len;
+	char		*itoa;
 
-	len = n < 0 ? 1 : 0;
-	while (n)
-	{
-		len++;
-		n /= 10;
-	}
-	return (len);
-}
-
-char		*ft_itoa(long long n)
-{
-	int		len;
-	char	*res;
-
-	if (n == -2147483648)
-		return (ft_strdup("-2147483648"));
-	if (!n)
-		return (ft_strdup("0"));
-	len = ft_nlen(n);
-	if (!(res = ft_calloc(len + 1, sizeof(char))))
+	len = ft_count_digit(n, base);
+	if (!(itoa = malloc(sizeof(char) * (len + 1))))
 		return (NULL);
+	itoa[len] = 0;
 	if (n < 0)
 	{
-		res[0] = '-';
+		itoa[0] = '-';
 		n = -n;
 	}
-	while (n)
+	while (len-- && n)
 	{
-		res[--len] = n % 10 + '0';
-		n /= 10;
+		itoa[len] = "0123456789abcdef"[n % base];
+		n /= base;
 	}
-	return (res);
+	return (itoa);
 }
