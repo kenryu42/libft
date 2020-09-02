@@ -6,7 +6,7 @@
 #    By: jliew <jliew@student.42tokyo.jp>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/07/04 22:41:31 by jliew             #+#    #+#              #
-#    Updated: 2020/08/08 13:20:30 by jliew            ###   ########.fr        #
+#    Updated: 2020/09/02 11:44:51 by jliew            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,9 @@ CC		= gcc
 CFLAGS	= -Wall -Wextra -Werror -I.
 
 SRCS	= \
+ft_abs.c\
+ft_max.c\
+ft_min.c\
 ft_isalnum.c\
 ft_isalpha.c\
 ft_isascii.c\
