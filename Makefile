@@ -6,7 +6,7 @@
 #    By: jliew <jliew@student.42tokyo.jp>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/07/04 22:41:31 by jliew             #+#    #+#              #
-#    Updated: 2020/09/02 12:30:50 by jliew            ###   ########.fr        #
+#    Updated: 2020/09/04 14:41:12 by jliew            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,6 +37,7 @@ ft_substr.c\
 ft_strjoin.c\
 ft_strlcat.c\
 ft_strlcpy.c\
+ft_strcmp.c\
 ft_strncmp.c\
 ft_strnstr.c\
 ft_strrchr.c\
